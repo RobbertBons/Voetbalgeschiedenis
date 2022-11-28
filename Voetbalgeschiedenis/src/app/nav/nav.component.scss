@@ -1,0 +1,22 @@
+$primary: blue;
+$secondary: lightblue;
+$background: rgb(52, 136, 167);
+
+
+nav{
+   background-color: $background;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   ul{
+        display: inline-block;
+        list-style: none;
+        margin-top: 10vh;
+   }
+
+   li{
+        margin-top: 5vh;
+   }
+}
