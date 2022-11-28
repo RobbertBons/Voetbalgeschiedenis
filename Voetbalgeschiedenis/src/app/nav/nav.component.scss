@@ -1,6 +1,6 @@
-$primary: blue;
-$secondary: lightblue;
-$background: rgb(52, 136, 167);
+$primary: #006DAA;
+$secondary: #B9D6F2;
+$background: #003559;
 
 
 nav{
@@ -9,14 +9,14 @@ nav{
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-
+   position: relative;  
    ul{
         display: inline-block;
         list-style: none;
-        margin-top: 10vh;
+        margin-top: 20vh;
    }
 
    li{
-        margin-top: 5vh;
+        margin-top: 10vh;
    }
 }
