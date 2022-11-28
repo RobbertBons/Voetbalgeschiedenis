@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'users',
-    component: NavComponent
+    component: 
   },
   {
     path: 'details',
