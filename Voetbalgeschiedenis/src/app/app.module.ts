@@ -7,13 +7,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     NavComponent,
-    DetailsComponent
+    DetailsComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
