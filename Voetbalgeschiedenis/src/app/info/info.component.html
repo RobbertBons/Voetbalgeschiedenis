@@ -1,8 +1,13 @@
 <main>
     <h1>Voetbalinformatie</h1>
-    <ul>
-        <li *ngFor="let info of infos.Search">
-            {{info.Year}}
-        </li>
-    </ul>
+    <section>
+        <article class="card" *ngFor="let year of year">
+            <span class="bold">Jaar:</span>{{year.year}}<br>
+            <span class="bold">Land:</span>{{year.Country}}<br>
+            <span class="bold">Eerste plaats:</span>{{year.Winner}}<br>
+            <span class="bold">Tweede plaats:</span>{{year.Runners_up}}<br>
+            <span class="bold">Derde plaats:</span>{{year.Third}}<br>
+            <span class="bold">Vierde plaats:</span>{{year.Fourth}}
+        </article>
+    </section>
 </main>
