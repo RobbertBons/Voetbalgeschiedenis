@@ -17,7 +17,9 @@ export class InfoComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.data.GetYear().subscribe((data: any) => this.year = data)
+    this.data.getYears().subscribe((data: any) => {
+      return this.year = data;
+    })
   }
 
 }
