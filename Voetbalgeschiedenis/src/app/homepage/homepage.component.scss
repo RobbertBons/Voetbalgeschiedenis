@@ -1,15 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
+
 body{
     #header{
         width: 100%;
         height: 50vh;
-        background-size: cover;
-        background-position: center;
         
         h1{
             text-align: center;
@@ -17,6 +10,11 @@ body{
             width: 100%;
             height: 100vh;
         }
+        img{
+            position: center;
+            font-size: 100px;
+        }
     }
+
 }
 
