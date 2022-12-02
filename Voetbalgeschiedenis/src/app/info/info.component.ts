@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonService } from '../json.service';
 
 @Component({
   selector: 'app-info',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  constructor() { }
+  movies:any
+
+  constructor(private data: JsonService) { }
 
   ngOnInit(): void {
+
+    this.data.getInfo().subscribe(data => this.info = data)
   }
 
 }

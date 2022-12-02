@@ -9,5 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 export class JsonService {
 
   constructor(private http: HttpClientModule) { }
+
+  getInfo(){
+    return this.http.get('https://k0497.azurewebsites.net/api/matches/getallmatches');
+  }
   
 }
