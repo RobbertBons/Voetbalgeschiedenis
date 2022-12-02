@@ -8,7 +8,7 @@ import { JsonService } from '../json.service';
 })
 export class InfoComponent implements OnInit {
 
-  movies:any
+  infos:any
 
   constructor(private data: JsonService) { }
 

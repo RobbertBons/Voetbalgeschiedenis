@@ -11,7 +11,7 @@ export class JsonService {
   constructor(private http: HttpClientModule) { }
 
   getInfo(){
-    return this.http.get('https://k0497.azurewebsites.net/api/matches/getallmatches');
+    return this.http.get('https://k0497.azurewebsites.net/api/years/getallyears');
   }
   
 }
