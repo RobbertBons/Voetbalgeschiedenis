@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { JsonService } from '../json.service';
 
 @Component({
@@ -8,13 +9,15 @@ import { JsonService } from '../json.service';
 })
 export class InfoComponent implements OnInit {
 
-  infos:any
+  year: any;
 
-  constructor(private data: JsonService) { }
+  constructor(private data: JsonService, private route:ActivatedRoute) { 
+    this.route.params.subscribe(params => this.year = params['info']);
+  }
 
   ngOnInit(): void {
 
-    this.data.getInfo().subscribe(data => this.info = data)
+    this.data.GetYear().subscribe((data: any) => this.year = data)
   }
 
 }
