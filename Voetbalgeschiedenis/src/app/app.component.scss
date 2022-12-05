@@ -4,9 +4,30 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+
 main{
     display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 1fr;
-    height: 100vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 8vh 17vh 17vh 17vh 17vh 17vh 17vh;
+    grid-template-areas: 
+    "logo navigatie navigatie navigatie navigatie navigatie"
+    ". con con con con con"
+    ". con con con con con"
+    ". con con con con con"
+    ". con con con con con"
+    "footer footer footer footer footer footer";
 }
+
+.navigatie{
+    grid-area: navigatie;
+}
+
+.nav{
+    grid-area: con;
+}
+
+.content{
+    grid-area: con;
+}
+
+
