@@ -3,18 +3,31 @@ body{
     #header{
         width: 100%;
         height: 50vh;
-        
+        text-align: center;
+        position: absolute;
+
         h1{
-            text-align: center;
-            position: absolute;
             width: 100%;
             height: 100vh;
         }
         img{
             position: center;
-            font-size: 100px;
+            width: 90vw;
         }
     }
+    #main{
+        text-align: center;
+        position: absolute;
 
+        h1{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .wedstrijden{
+        padding: 80 px 0;
+        display: flex;
+        }
+    }
 }
 
