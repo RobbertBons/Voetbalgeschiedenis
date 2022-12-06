@@ -26,8 +26,10 @@ nav{
 
    li a{
      display: block;
-     padding: 8px;
+     padding: 10px;
      background-color: $background;
+     text-decoration: none;
+     margin: 10px;
    }
 
    img{
