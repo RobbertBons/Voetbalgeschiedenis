@@ -30,6 +30,8 @@ nav{
    }
 
    img{
-     display: grid;
+    position: absolute;
+      max-width: 100px;
+      left: 20px;
    }
 }
