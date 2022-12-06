@@ -20,10 +20,11 @@ main{
 
 .navigatie{
     grid-area: navigatie;
+    align-self: center;
 }
 
 .nav{
-    grid-area: con;
+    grid-area: navigatie;
 }
 
 .content{
