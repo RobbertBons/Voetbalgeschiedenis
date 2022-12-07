@@ -1,10 +1,10 @@
 $primary: blue;
 $secondary: lightblue;
 $background: rgb(52, 136, 167);
+$textColor: black;
 
 
 nav{
-
    background-color: $background;
    display: flex;
    align-items: center;
@@ -30,6 +30,7 @@ nav{
      background-color: $background;
      text-decoration: none;
      margin: 10px;
+     color: $textColor;
    }
 
    img{
