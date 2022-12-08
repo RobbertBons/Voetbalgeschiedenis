@@ -45,19 +45,9 @@ body{
                 font-weight: 300;
                 border-radius: 10px;
                 transition: background 0.5s, transform 0.5s;
-
-                h2{
-                    font-size: 30px;
-                    font-weight: 500;
-                    margin-bottom: 15px;
-                }
-                .wedstrijden-list div:hover{
-                    background: $secondary;
-                    transform: translateY(-10px);
-                }
             }
 
-
+            
         }
 
         }
