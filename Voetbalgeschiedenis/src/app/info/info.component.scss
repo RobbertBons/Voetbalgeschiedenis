@@ -1,4 +1,5 @@
 $primary: #222;
+$bordercolor: lightblue;
 
 main{
     margin: 0;
@@ -8,5 +9,16 @@ main{
 h1{
     color: $primary;
     font-size: 20px;
-    align-items: center;
+}
+
+.container{
+    height: 300px;
+}
+
+.card{
+    border: double;
+    box-sizing: content-box;
+    border-color: $bordercolor;
+    display: flex;
+    justify-content: flex-start;
 }
