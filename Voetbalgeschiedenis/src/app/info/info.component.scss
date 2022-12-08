@@ -1,4 +1,5 @@
 $primary: #222;
+$bordercolor: lightblue;
 
 main{
     margin: 0;
@@ -13,8 +14,8 @@ h1{
 .container{
     display: flex;
     justify-content: space-between;
-    border: $primary;
+    border: 5px $primary;
     border-radius: 20px;
     align-items: center;
-
+    
 }
