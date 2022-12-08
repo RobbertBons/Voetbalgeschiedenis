@@ -33,12 +33,19 @@ body{
         display: flex;
 
         .wedstrijden-list{
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-gap: 40px;
             margin-top: 50px;
 
-            .div{
+            .flex-container{
+                display: flex;
+                background: $background;
+            }
+
+
+
+            .flex-container> div{
                 background: $background;
                 padding: 40px;
                 font-size: 13px;
@@ -46,6 +53,9 @@ body{
                 border-radius: 10px;
                 transition: background 0.5s, transform 0.5s;
             }
+
+
+            
             
         }
 
