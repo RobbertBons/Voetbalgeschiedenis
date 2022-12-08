@@ -9,3 +9,9 @@ h1{
     color: $primary;
     font-size: 20px;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
