@@ -15,5 +15,11 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+}
+
+.card{
+    border: double;
+    border-radius: 10px;
+    border-color: $bordercolor;
+    border-width: 100%;
 }
