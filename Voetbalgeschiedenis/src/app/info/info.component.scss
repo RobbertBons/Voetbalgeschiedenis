@@ -12,6 +12,8 @@ h1{
 
 .container{
     display: flex;
-    justify-content: flex-end;
-    max-width: 100%;
+    justify-content: space-between;
+    border: $primary;
+    border-radius: 20px;
+
 }
