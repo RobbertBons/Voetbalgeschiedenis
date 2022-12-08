@@ -17,7 +17,7 @@ h1{
 
 .card{
     border: double;
-    border-radius: 10px;
+    box-sizing: content-box;
     border-color: $bordercolor;
     display: flex;
     justify-content: flex-start;
