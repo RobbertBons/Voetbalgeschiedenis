@@ -22,13 +22,13 @@ $background: rgb(52, 136, 167);
     #main{
         text-align: center;
         position: absolute;
-
+        
         h2{
             width: 100%;
             height: 5vh;
             background-color: $background;
             border-radius: 10px;
-            
+            color: $secondary;
         }
         
         div{
