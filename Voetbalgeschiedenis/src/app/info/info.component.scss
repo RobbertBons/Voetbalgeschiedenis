@@ -1,5 +1,5 @@
 $primary: #222;
-$bordercolor: lightblue;
+$bordercolor: black;
 
 main{
     margin: 0;
@@ -16,9 +16,18 @@ h1{
 }
 
 .card{
-    border: double;
+    border: solid;
     box-sizing: content-box;
     border-color: $bordercolor;
-    display: flex;
-    justify-content: flex-start;
+    display: table;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.card bold{
+    display: table-cell;
+    vertical-align: middle;
 }
