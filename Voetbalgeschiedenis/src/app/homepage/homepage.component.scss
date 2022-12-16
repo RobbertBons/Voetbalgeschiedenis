@@ -4,14 +4,18 @@ $background: rgb(52, 136, 167);
 
     #header{
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         text-align: center;
         position: absolute;
-
+        
         h1{
             width: 100%;
             height: 10vh;
             position: absolute;
+        }
+        img{
+            width: 100%;
+            height: 80vh;
         }
     }
 
@@ -32,8 +36,10 @@ $background: rgb(52, 136, 167);
 
             .Wedstrijden-list{
                 width: 100%;
-                height: 13vh;
+                height: 100vh;
                 padding: 200px;
+                
+
                 div{
                     width: 100%;
                     height: 15vh;
