@@ -10,12 +10,8 @@ $background: rgb(52, 136, 167);
 
         h1{
             width: 100%;
-            height: 100vh;
+            height: 10vh;
             position: absolute;
-        }
-        img{
-            position: center;
-            width: 90vw;
         }
     }
 
@@ -23,20 +19,30 @@ $background: rgb(52, 136, 167);
         text-align: center;
         position: absolute;
         
+        
         h2{
             width: 100%;
             height: 5vh;
             background-color: $background;
             border-radius: 10px;
-            color: $secondary;
+            color: #fff;
         }
         
         div{
-            width: 100%;
-            height: 13vh;
-            justify-content: space-between;
-            background-color: $secondary;
-            border-radius: 10px;
+
+            .Wedstrijden-list{
+                width: 100%;
+                height: 13vh;
+
+                div{
+                    width: 100%;
+                    height: 15vh;
+                    justify-content: space-between;
+                    background-color: $secondary;
+                    border-radius: 10px;
+                }
+            }
+            
         }
         
     
