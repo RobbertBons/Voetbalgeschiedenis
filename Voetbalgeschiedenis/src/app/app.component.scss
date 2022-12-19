@@ -5,36 +5,29 @@
     box-sizing: border-box;
 }
 
-main{
+#container{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 8vh 17vh 17vh 17vh 17vh 17vh 17vh;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 3fr;
     grid-template-areas: 
-    "logo navigatie navigatie navigatie navigatie navigatie"
-    ". con con con con con"
-    ". con con con con con"
-    ". con con con con con"
-    ". con con con con con"
-    "footer footer footer footer footer footer";
+    "nav"
+    "plaatje"
+    "main";
 }
 
-.navigatie{
-    grid-area: navigatie;
-    align-self: center;
+nav{
+    grid-area: nav;
+  
 }
-
-.nav{
-    grid-area: navigatie;
+#plaatje{
+    grid-area: plaatje;
+    background-image: url("../assets/R.png");
+}a
+main{
+    grid-area: main;
 }
-
-.content{
-    grid-area: con;
-}
-
-.log{
-    grid-area: logo;
-}
-
 
 
 
