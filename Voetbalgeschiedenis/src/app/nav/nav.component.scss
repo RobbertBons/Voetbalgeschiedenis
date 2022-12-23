@@ -2,13 +2,15 @@ $primary: blue;
 $secondary: lightblue;
 $background: rgb(52, 136, 167);
 $textColor: black;
-   .grid-container{
-      
+   .container{
+      grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 20px;
+  background-color: $background;
    }
 
    ul{
       background-color: $secondary;
-      grid-template-columns: 6fr 6fr;
       list-style: none
    }
 
@@ -18,4 +20,9 @@ $textColor: black;
       text-align: center;
       text-decoration: none;
       color: $textColor;
+   }
+
+   .logo{
+      width: 100px;
+      height: 50px;
    }
