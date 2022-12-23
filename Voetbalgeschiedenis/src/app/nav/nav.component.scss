@@ -2,10 +2,10 @@ $primary: blue;
 $secondary: lightblue;
 $background: rgb(52, 136, 167);
 $textColor: black;
-   .nav-bar{
-      display: flex;
-      flex-direction: column;
+   .grid-container{
+      
    }
+
    ul{
       background-color: $secondary;
       grid-template-columns: 6fr 6fr;
