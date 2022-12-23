@@ -12,11 +12,12 @@ $background: rgb(52, 136, 167);
         img{
             width: 100%;
             height: 80vh;
+            
         }
-    
+        
 
         h2{
-            width: 50%;
+            width: 100%;
             height: 5vh;
             background-color: $background;
             border-radius: 10px;
@@ -28,7 +29,8 @@ $background: rgb(52, 136, 167);
             display: grid;
             grid-template-columns: 1fr 1fr;
             text-align: center;
-
+            column-gap: 50px;
+            row-gap: 50px;
             }
 
         .border{
@@ -37,4 +39,6 @@ $background: rgb(52, 136, 167);
         width: 100%;
         background-color: $secondary;
         align-items: center;
+        height: 125px;
+        
     }
