@@ -15,8 +15,6 @@ $background: rgb(52, 136, 167);
         }
     
 
-   
-        
         h2{
             width: 50%;
             height: 5vh;
@@ -25,10 +23,7 @@ $background: rgb(52, 136, 167);
             color: #fff;
             text-align: center;
         }
-        
 
-            
-    
         .Wedstrijden-list{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -41,4 +36,5 @@ $background: rgb(52, 136, 167);
         border-radius: 10px;
         width: 100%;
         background-color: $secondary;
+        align-items: center;
     }
