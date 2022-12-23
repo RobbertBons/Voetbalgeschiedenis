@@ -2,12 +2,8 @@ $primary: blue;
 $secondary: lightblue;
 $background: rgb(52, 136, 167);
 
-    #header{
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        position: absolute;
-        
+
+
         h1{
             width: 100%;
             height: 10vh;
@@ -17,7 +13,7 @@ $background: rgb(52, 136, 167);
             width: 100%;
             height: 80vh;
         }
-    }
+    
 
    
         
@@ -37,7 +33,7 @@ $background: rgb(52, 136, 167);
             display: grid;
             grid-template-columns: 1fr 1fr;
             text-align: center;
-            
+
             }
 
         .border{
