@@ -1,9 +1,17 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class JsonService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getYears(){
+    return this.http.get('https://k0497.azurewebsites.net/api/years/getallyears');
+  }
+  
 }

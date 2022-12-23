@@ -1,0 +1,46 @@
+$primary: blue;
+$secondary: lightblue;
+$background: rgb(52, 136, 167);
+.container{
+    background-color: $secondary;
+    float: left;
+}
+
+        h1{
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+        }
+
+        img{
+            width: 100%;
+            height: 80vh;
+            
+        }
+        
+        h2{
+            width: 100%;
+            height: 5vh;
+            background-color: $background;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .Wedstrijden-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            column-gap: 50px;
+            row-gap: 50px;
+            }
+
+        .border{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100%;
+        background-color: $secondary;
+        align-items: center;
+        height: 125px;
+        
+    }
