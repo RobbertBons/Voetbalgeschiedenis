@@ -1,13 +1,14 @@
 <main>
     <h1>Voetbalinformatie</h1>
-    <section class="container">
-        <article class="card" *ngFor="let year of year">
-            <span class="bold">Jaar:</span>{{year.year}}<br>
-            <span class="bold">Land:</span>{{year.Country}}<br>
-            <span class="bold">Eerste plaats:</span>{{year.Winner}}<br>
-            <span class="bold">Tweede plaats:</span>{{year.Runners_up}}<br>
-            <span class="bold">Derde plaats:</span>{{year.Third}}<br>
-            <span class="bold">Vierde plaats:</span>{{year.Fourth}}
-        </article>
-    </section>
+    <h3>Alle voetbalwedstrijden van de afgelopen jaren!</h3>
+    <div class="row">
+            <div class="border" *ngFor="let year of year">
+                <div class="column">Jaar:</div>{{year.year}}<br>
+                <div class="column">Land:</div>{{year.Country}}<br>
+                <div class="column">Eerste plaats:</div>{{year.Winner}}<br>
+                <div class="column">Tweede plaats:</div>{{year.Runners_up}}<br>
+                <div class="column">Derde plaats:</div>{{year.Third}}<br>
+                <div class="column">Vierde plaats:</div>{{year.Fourth}}
+            </div>
+    </div>
 </main>
