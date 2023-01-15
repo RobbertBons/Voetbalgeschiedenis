@@ -3,7 +3,7 @@ $secondary: lightblue;
 $background: rgb(52, 136, 167); 
 $color: #000;
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     #container{
         display: grid;
         min-height: 100vh;
@@ -17,8 +17,9 @@ $color: #000;
     .content{
         display: grid;
         grid-area: nav;
-        max-width: 1500px;
-        margin: 10px;
+        max-width: 2000px;
+        margin: 50px;
+        justify-content: center;
     }
 
     h1{
@@ -26,7 +27,7 @@ $color: #000;
         height: 10vh;
         grid-template-columns: 1fr;
         text-align: center;
-        justify-content: center;
+
     }
 
     img{
@@ -68,7 +69,7 @@ $color: #000;
     }
 }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1200px) {
         #container{
             display: grid;
             min-height: 100vh;
