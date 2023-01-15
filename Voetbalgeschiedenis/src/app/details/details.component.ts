@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { JsonService } from '../json.service';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+ id: any;
+
+  constructor(private data: JsonService, private route:ActivatedRoute) { 
+    this.route.params.subscribe(params => this.id= params['details']);
+  }
+
 
   ngOnInit(): void {
+    this.data.getMatches().subscribe((data: any) => {
+      return this.id = data;
+    })
   }
 
 }

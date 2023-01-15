@@ -1,1 +1,19 @@
-<p>details works!</p>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="border" *ngFor="let id of id">
+                <br><div class="column"></div>{{id.year}}<br>
+                <div class="column">Land:</div>{{id.City}}<br>
+                <div class="column">Thuis team:</div>{{id.Home_Team_Name}}<br>
+                <div class="column">Uit team:</div>{{id.Away_Team_Name}}<br>
+                <div class="column">Goals home:</div>{{id.Home_Team_Goals}}<br>
+                <div class="column">Goals uit:</div>{{id.Away_Team_Goals}}<br>
+                <div class="column">Thuis teamid:</div>{{id.Home_Team_Initials}}<br>
+                <div class="column">Uit teamid:</div>{{id.Away_Team_Initials}}<br>
+                <div class="column">Ronde id:</div>{{id.roundid}}<br>
+                <div class="column">Wedstrijd id:</div>{{id.matchid}}<br>
+                <a routerLink="details">Learn more</a>
+            </div>
+        </div> 
+    </div>
+</main>
