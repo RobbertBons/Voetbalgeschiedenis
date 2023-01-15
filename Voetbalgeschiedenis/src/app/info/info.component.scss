@@ -10,6 +10,60 @@ main{
     padding: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+    h1{
+        color: $primary;
+        text-align: center;
+    }
+    
+    h3{
+        text-align: center;
+    }
+    
+    .border{
+        border: 1px solid $bordercolor;
+        border-radius: 10px;
+        width: 100%;
+        background-color: $secondary;
+        align-items: center;
+        height: 150px;
+        
+    }
+    #container{
+        display: grid;
+        min-height: 200vh;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main";
+    }
+    
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
+@media only screen and (min-width: 1200px) {
+
 h1{
     color: $primary;
     text-align: center;
@@ -25,22 +79,26 @@ h3{
     width: 100%;
     background-color: $secondary;
     align-items: center;
-    height: 155px;
-    justify-content:center;
+    height: 150px;
+    
 }
 #container{
     display: grid;
     min-height: 200vh;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "nav nav nav"
-    "main main main";
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main";
 }
 
 .row{
     display: grid;
+    grid-area: main;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     column-gap: 25px;
@@ -58,8 +116,168 @@ h3{
     clear: both;
   }
 
-  @media only screen and (max-width: 500px) {
-    body {
-      background-color: lightblue;
+}
+@media only screen and (max-width: 1000px) {
+    h1{
+        color: $primary;
+        text-align: center;
     }
+    
+    h3{
+        text-align: center;
+    }
+    
+    .border{
+        border: 1px solid $bordercolor;
+        border-radius: 10px;
+        width: 100%;
+        background-color: $secondary;
+        align-items: center;
+        height: 150px;
+        
+    }
+    #container{
+        display: grid;
+        min-height: 200vh;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: (12 1fr);
+        grid-template-areas: 
+        "nav nav nav "
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main";
+    }
+    
+    .row{
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+  }
+
+@media only screen and (max-width: 750px) {
+    h1{
+        color: $primary;
+        text-align: center;
+    }
+    
+    h3{
+        text-align: center;
+    }
+    
+    .border{
+        border: 1px solid $bordercolor;
+        border-radius: 10px;
+        width: 100%;
+        background-color: $secondary;
+        align-items: center;
+        height: 150px;
+        
+    }
+    #container{
+        display: grid;
+        min-height: 200vh;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: (12 1fr);
+        grid-template-areas: 
+        "nav nav "
+        "main main"
+        "main main"
+        "main main"
+        "main main";
+    }
+    
+    .row{
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+  }
+
+@media only screen and (max-width: 500px) {
+    h1{
+        color: $primary;
+        text-align: center;
+    }
+    
+    h3{
+        text-align: center;
+    }
+    
+    .border{
+        border: 1px solid $bordercolor;
+        border-radius: 10px;
+        width: 100%;
+        background-color: $secondary;
+        align-items: center;
+        height: 150px;
+        
+    }
+    #container{
+        display: grid;
+        min-height: 200vh;
+        width: 100%;
+        grid-template-columns: 1;
+        grid-template-rows: (12 1fr);
+        grid-template-areas: 
+        "nav "
+        "main"
+        "main"
+        "main"
+        "main";
+    }
+    
+    .row{
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr;
+        text-align: center;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
   }
