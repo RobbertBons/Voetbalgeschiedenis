@@ -1,5 +1,6 @@
 $primary: blue;
 $secondary: lightblue;
+<<<<<<< Updated upstream
 $background: rgb(52, 136, 167); 
 $color: #000;
 
@@ -67,6 +68,16 @@ $color: #000;
         align-items: center;
         height: 125px;
     }
+=======
+$background: rgb(52, 136, 167);
+
+.container{
+    background-color: $secondary;
+    float: left;
+    max-width: auto;
+    display: grid;
+
+>>>>>>> Stashed changes
 }
 
     @media only screen and (max-width: 1200px) {
