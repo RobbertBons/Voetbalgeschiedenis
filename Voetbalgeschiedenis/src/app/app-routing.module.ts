@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'details',
     component: DetailsComponent
+  },
+  {
+    path: 'info/details/1930',
+    component: DetailsComponent
   }
 ];
 
